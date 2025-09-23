@@ -280,6 +280,14 @@
             height: 90px;
             margin-bottom: 0;
             padding: 14px 25px 0;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+        }
+
+        .trait-box.expanded {
+            height: auto;
+            padding-bottom: 69px;
         }
 
         .trait-header {
@@ -297,6 +305,31 @@
             font-size: 16px;
             color: #8c6cbc;
             margin-top: 0;
+        }
+
+        .trait-description {
+            margin-top: 15px;
+            margin-bottom: 44px;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #ccc;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .trait-box.expanded .trait-description {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .trait-icon {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+
+        .trait-box.expanded .trait-icon {
+            transform: rotate(45deg);
         }
 
         @media (min-width: 768px) {
@@ -435,121 +468,166 @@
             <div class="trait-box">
                 <div class="trait-header">
                     <h4 class="trait-title">Aesthetic Sensitivity</h4>
-                    <i data-lucide="plus"></i>
+                    <i class="trait-icon" data-lucide="plus"></i>
                 </div>
                 <p class="trait-level">Medium</p>
+                <div class="trait-description">
+                    <p>You have a moderate appreciation for beauty and artistic expression, finding balance between aesthetic considerations and practical needs in your environment and choices.</p>
+                </div>
             </div>
             
             <div class="trait-box">
                 <div class="trait-header">
                     <h4 class="trait-title">Intellectual Curiosity</h4>
-                    <i data-lucide="plus"></i>
+                    <i class="trait-icon" data-lucide="plus"></i>
                 </div>
                 <p class="trait-level">Very High</p>
+                <div class="trait-description">
+                    <p>You possess an exceptional drive to learn, explore new ideas, and understand complex concepts. Your mind constantly seeks knowledge and meaningful intellectual challenges.</p>
+                </div>
             </div>
             
             <div class="trait-box">
                 <div class="trait-header">
                     <h4 class="trait-title">Creative Imagination</h4>
-                    <i data-lucide="plus"></i>
+                    <i class="trait-icon" data-lucide="plus"></i>
                 </div>
                 <p class="trait-level">High</p>
+                <div class="trait-description">
+                    <p>You excel at generating original ideas and thinking outside conventional boundaries. Your imagination allows you to envision possibilities others might miss.</p>
+                </div>
             </div>
             
             <div class="trait-box">
                 <div class="trait-header">
                     <h4 class="trait-title">Organisation</h4>
-                    <i data-lucide="plus"></i>
+                    <i class="trait-icon" data-lucide="plus"></i>
                 </div>
                 <p class="trait-level">High</p>
+                <div class="trait-description">
+                    <p>You naturally create structure and order in your environment and work. Your systematic approach helps you manage complexity effectively.</p>
+                </div>
             </div>
             
             <div class="trait-box">
                 <div class="trait-header">
                     <h4 class="trait-title">Productiveness</h4>
-                    <i data-lucide="plus"></i>
+                    <i class="trait-icon" data-lucide="plus"></i>
                 </div>
                 <p class="trait-level">High</p>
+                <div class="trait-description">
+                    <p>You consistently accomplish tasks and goals with efficiency. Your strong work ethic drives you to complete projects and make meaningful progress.</p>
+                </div>
             </div>
             
             <div class="trait-box">
                 <div class="trait-header">
                     <h4 class="trait-title">Responsibility</h4>
-                    <i data-lucide="plus"></i>
+                    <i class="trait-icon" data-lucide="plus"></i>
                 </div>
                 <p class="trait-level">High</p>
+                <div class="trait-description">
+                    <p>You take ownership of your commitments and feel accountable for outcomes. Others rely on you because you follow through consistently.</p>
+                </div>
             </div>
             
             <div class="trait-box">
                 <div class="trait-header">
                     <h4 class="trait-title">Energy Level</h4>
-                    <i data-lucide="plus"></i>
+                    <i class="trait-icon" data-lucide="plus"></i>
                 </div>
                 <p class="trait-level">High</p>
+                <div class="trait-description">
+                    <p>You maintain strong vitality and enthusiasm for activities. Your natural energy helps you stay engaged and active throughout demanding situations.</p>
+                </div>
             </div>
             
             <div class="trait-box">
                 <div class="trait-header">
                     <h4 class="trait-title">Sociability</h4>
-                    <i data-lucide="plus"></i>
+                    <i class="trait-icon" data-lucide="plus"></i>
                 </div>
                 <p class="trait-level">High</p>
+                <div class="trait-description">
+                    <p>You enjoy connecting with others and feel comfortable in social situations. People are drawn to your engaging and approachable nature.</p>
+                </div>
             </div>
             
             <div class="trait-box">
                 <div class="trait-header">
                     <h4 class="trait-title">Assertiveness</h4>
-                    <i data-lucide="plus"></i>
+                    <i class="trait-icon" data-lucide="plus"></i>
                 </div>
                 <p class="trait-level">High</p>
+                <div class="trait-description">
+                    <p>You confidently express your opinions and stand up for your beliefs. You're comfortable taking charge when situations require leadership.</p>
+                </div>
             </div>
             
             <div class="trait-box">
                 <div class="trait-header">
                     <h4 class="trait-title">Respectfulness</h4>
-                    <i data-lucide="plus"></i>
+                    <i class="trait-icon" data-lucide="plus"></i>
                 </div>
                 <p class="trait-level">High</p>
+                <div class="trait-description">
+                    <p>You treat others with consideration and courtesy, valuing different perspectives. Your respectful approach builds trust and positive relationships.</p>
+                </div>
             </div>
             
             <div class="trait-box">
                 <div class="trait-header">
                     <h4 class="trait-title">Trust</h4>
-                    <i data-lucide="plus"></i>
+                    <i class="trait-icon" data-lucide="plus"></i>
                 </div>
                 <p class="trait-level">High</p>
+                <div class="trait-description">
+                    <p>You generally believe in others' good intentions and are willing to be vulnerable. This openness allows for deeper, more meaningful connections.</p>
+                </div>
             </div>
             
             <div class="trait-box">
                 <div class="trait-header">
                     <h4 class="trait-title">Compassion</h4>
-                    <i data-lucide="plus"></i>
+                    <i class="trait-icon" data-lucide="plus"></i>
                 </div>
                 <p class="trait-level">High</p>
+                <div class="trait-description">
+                    <p>You deeply empathize with others' experiences and feel motivated to help those in need. Your caring nature makes you a source of comfort and support.</p>
+                </div>
             </div>
             
             <div class="trait-box">
                 <div class="trait-header">
                     <h4 class="trait-title">Anxiety</h4>
-                    <i data-lucide="plus"></i>
+                    <i class="trait-icon" data-lucide="plus"></i>
                 </div>
                 <p class="trait-level">High</p>
+                <div class="trait-description">
+                    <p>You tend to worry about potential problems and feel tension about uncertain outcomes. While this can be challenging, it also helps you prepare thoroughly for situations.</p>
+                </div>
             </div>
             
             <div class="trait-box">
                 <div class="trait-header">
                     <h4 class="trait-title">Depression</h4>
-                    <i data-lucide="plus"></i>
+                    <i class="trait-icon" data-lucide="plus"></i>
                 </div>
                 <p class="trait-level">High</p>
+                <div class="trait-description">
+                    <p>You may experience periods of low mood and discouragement. Recognizing this pattern is important for developing healthy coping strategies and seeking support when needed.</p>
+                </div>
             </div>
             
             <div class="trait-box">
                 <div class="trait-header">
                     <h4 class="trait-title">Emotional Volatility</h4>
-                    <i data-lucide="plus"></i>
+                    <i class="trait-icon" data-lucide="plus"></i>
                 </div>
                 <p class="trait-level">High</p>
+                <div class="trait-description">
+                    <p>Your emotions can shift quickly and intensely. While this brings depth to your experiences, developing emotional regulation skills can help you navigate these fluctuations more smoothly.</p>
+                </div>
             </div>
         </section>
     </div>
@@ -573,6 +651,32 @@
 
             // Initial update
             updateScrollProgress();
+
+            // Expandable trait boxes
+            document.querySelectorAll('.trait-box').forEach(box => {
+                box.addEventListener('click', function() {
+                    if (this.classList.contains('expanded')) {
+                        // Closing: set explicit height first, then animate to 90px
+                        this.style.height = this.scrollHeight + 'px';
+                        requestAnimationFrame(() => {
+                            this.classList.remove('expanded');
+                            this.style.height = '90px';
+                        });
+                    } else {
+                        // Opening: temporarily add expanded class to measure full height
+                        this.classList.add('expanded');
+                        const targetHeight = this.scrollHeight;
+                        this.classList.remove('expanded');
+
+                        // Set initial height and start animation
+                        this.style.height = '90px';
+                        requestAnimationFrame(() => {
+                            this.classList.add('expanded');
+                            this.style.height = targetHeight + 'px';
+                        });
+                    }
+                });
+            });
         });
     </script>
 </body>
