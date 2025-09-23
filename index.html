@@ -118,10 +118,11 @@
         }
 
         .progress {
-            width: 58px;
+            width: 0%;
             height: 4px;
             background-color: #8c6cbc;
             box-shadow: 0 0 9.8px rgba(125, 11, 255, 0.81);
+            transition: width 0.1s ease-out;
         }
 
         .welcome {
@@ -556,6 +557,22 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             lucide.createIcons();
+
+            // Scroll progress bar animation
+            function updateScrollProgress() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const documentHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrollProgress = (scrollTop / documentHeight) * 100;
+
+                const progressBar = document.querySelector('.progress');
+                progressBar.style.width = scrollProgress + '%';
+            }
+
+            // Update on scroll
+            window.addEventListener('scroll', updateScrollProgress);
+
+            // Initial update
+            updateScrollProgress();
         });
     </script>
 </body>
