@@ -87,6 +87,19 @@ Use a rewrite so every path serves `index.html` (client‑side slug handling):
 
 Place per‑user JSON files in `data/` as part of your deployment workflow. The app fetches with `cache: 'no-cache'` to reduce stale content; adjust if you want stronger CDN caching.
 
+## Deploying on AWS with SST
+
+- Configure Route 53 so the hosted zone `os.coach` exists (already true if the apex is managed there).
+- `sst.config.ts` defines a `StaticSite` that:
+  - runs `node ./sst/scripts/build-static.mjs` to copy `index.html`, `assets/`, and `data/` into `dist/`.
+  - provisions an S3/CloudFront site at `psych.os.coach` with a fallback to `index.html` for client-side routing.
+  - expects the hosted zone name `os.coach` so DNS & TLS are handled automatically.
+- Deploy:
+  1. `npm install --save-dev sst` (or use pnpm/yarn to add SST to your toolchain).
+  2. `npx sst deploy --stage prod` (stages other than `prod` are removed automatically on teardown).
+  3. Add new profile JSON files to `data/` before deploying so CloudFront serves them.
+- Local iteration: `npx sst dev` hosts the static site with the same build script.
+
 ## Notes & Limitations
 
 - Security: JSON files are static and publicly readable; this approach relies on “security‑through‑obscurity”. For private reports, front with an authenticated API.

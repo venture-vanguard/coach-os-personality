@@ -1,0 +1,3 @@
+# SST build artifacts
+.sst/
+dist/
