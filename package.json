@@ -1,0 +1,23 @@
+{
+  "name": "coach-os-personality",
+  "version": "1.0.0",
+  "description": "Single‑page static site that renders a personalized “report” from JSON files. The page styles are in `assets/main.css`, behavior in `assets/main.js`, and copy comes from JSON under `data/`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/venture-vanguard/coach-os-personality.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/venture-vanguard/coach-os-personality/issues"
+  },
+  "homepage": "https://github.com/venture-vanguard/coach-os-personality#readme",
+  "devDependencies": {
+    "sst": "^3.17.14"
+  }
+}

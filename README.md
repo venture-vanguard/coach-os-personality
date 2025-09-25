@@ -99,6 +99,13 @@ Place per‑user JSON files in `data/` as part of your deployment workflow. The 
   2. `npx sst deploy --stage prod` (stages other than `prod` are removed automatically on teardown).
   3. Add new profile JSON files to `data/` before deploying so CloudFront serves them.
 - Local iteration: `npx sst dev` hosts the static site with the same build script.
+- AWS credential requirements:
+  - Install AWS CLI v2 and configure a profile with programmatic access. Either:
+    - `aws configure sso` using an IAM Identity Center role that can manage Route 53, ACM (us-east-1), S3, and CloudFront.
+    - or `aws configure --profile <name>` with Access Key + Secret Key for an IAM user granted equivalent permissions.
+  - Ensure the profile’s default region is set (e.g. `us-east-1`) and export it before deploying: `export AWS_PROFILE=<name>`.
+  - Verify credentials with `aws sts get-caller-identity` prior to running SST commands.
+- Deployment owner: [@leonfs](https://github.com/leonfs)
 
 ## Notes & Limitations
 

@@ -1,3 +1,4 @@
 # SST build artifacts
 .sst/
 dist/
+node_modules/
