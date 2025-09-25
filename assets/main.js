@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     lucide.createIcons();
 
+    const statusMessages = {
+        fallback: "We couldn't find that report, so you're seeing a sample instead.",
+        error: "We couldn't load your report right now. Please try again later."
+    };
+
     loadContentFromJson();
 
     // Scroll progress bar animation
@@ -46,17 +51,91 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function loadContentFromJson() {
-        fetch('data/content.json')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to fetch content.json');
+        const { slug, reason } = resolveReportSlug();
+
+        if (reason === 'invalid') {
+            console.warn('Ignoring invalid report slug from URL.', window.location.pathname);
+            loadDefaultContent({ showFallbackMessage: true });
+            return;
+        }
+
+        if (slug) {
+            fetchContent(`data/${slug}.json`)
+                .then(data => {
+                    clearStatusMessage();
+                    applyContent(data);
+                })
+                .catch(error => {
+                    console.warn(`Unable to load report data for "${slug}"`, error);
+                    loadDefaultContent({ showFallbackMessage: true });
+                });
+            return;
+        }
+
+        loadDefaultContent();
+    }
+
+    function loadDefaultContent(options = {}) {
+        fetchContent('data/content.json')
+            .then(data => {
+                applyContent(data);
+                if (options.showFallbackMessage) {
+                    showStatusMessage(statusMessages.fallback);
+                } else {
+                    clearStatusMessage();
                 }
-                return response.json();
             })
-            .then(applyContent)
             .catch(error => {
-                console.error('Error loading page content', error);
+                showStatusMessage(statusMessages.error);
+                console.error('Error loading default content', error);
             });
+    }
+
+    function resolveReportSlug() {
+        const segments = window.location.pathname.split('/').filter(Boolean);
+        if (!segments.length) {
+            return { slug: null, reason: null };
+        }
+
+        const candidate = segments[segments.length - 1];
+        if (candidate.includes('.')) {
+            return { slug: null, reason: null };
+        }
+
+        const normalized = candidate.toLowerCase();
+        const slugPattern = /^[a-z]+-[a-z]+-[a-z0-9]{6}$/;
+        if (!slugPattern.test(normalized)) {
+            return { slug: null, reason: 'invalid' };
+        }
+
+        return { slug: normalized, reason: 'valid' };
+    }
+
+    function fetchContent(path) {
+        return fetch(path, { cache: 'no-cache' }).then(response => {
+            if (!response.ok) {
+                throw new Error(`Failed to fetch ${path}: ${response.status}`);
+            }
+            return response.json();
+        });
+    }
+
+    function showStatusMessage(message) {
+        const statusEl = document.querySelector('[data-status]');
+        if (!statusEl) {
+            return;
+        }
+        statusEl.textContent = message;
+        statusEl.hidden = false;
+    }
+
+    function clearStatusMessage() {
+        const statusEl = document.querySelector('[data-status]');
+        if (!statusEl) {
+            return;
+        }
+        statusEl.textContent = '';
+        statusEl.hidden = true;
     }
 
     function applyContent(content) {

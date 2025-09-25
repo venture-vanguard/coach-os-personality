@@ -139,6 +139,22 @@ body {
     line-height: 1.4;
 }
 
+.content-status {
+    margin: 24px 24px 0;
+    padding: 12px 16px;
+    background: rgba(140, 108, 188, 0.15);
+    border: 1px solid rgba(140, 108, 188, 0.4);
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.content-status[hidden] {
+    display: none;
+}
+
 .section-header {
     padding: 44px 25px;
 }
