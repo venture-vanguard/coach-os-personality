@@ -42,7 +42,7 @@ Each profile JSON under `data/` should follow this shape:
     "description": "string"
   },
   "sliders": [
-    { "title": "string", "content": "string" }
+    { "card": "string", "title": "string", "content": "string" }
   ],
   "traits": [
     { "title": "string", "level": "string", "description": "string" }

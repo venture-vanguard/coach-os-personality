@@ -1,5 +1,118 @@
 {
+  "welcome": "Social catalyst and decisive strategist with high energy and crisp candor.",
+  "summary": "Strategic leader with bold, original ideas and relentless drive. You unite rooms, reframe problems, and turn complexity into clear narratives. Strengths include creativity, throughput, and decisive influence. Risks include analysis-paralysis, perfectionism on details, overextension, and a curt tone under stress. Evidence-based trust, tight decision criteria, clear deadlines, focus blocks, and planned recovery preserve depth, pace, and relationships.",
   "animal": {
-    "image": "https://res.cloudinary.com/djay7w7yb/image/upload/v1758550454/personality_reports_spirit/Tom-Rayner-01K3DGN5KGAAE3QPWE4PYZ3F2A.jpg"
-  }
+    "name": "ChronoPhoenix",
+    "description": "Emerging from Tom's relentless quest for growth and new challenges, the ChronoPhoenix combines elements of time, resilience, and innovation.",
+     "image": "https://res.cloudinary.com/djay7w7yb/image/upload/v1758550454/personality_reports_spirit/Tom-Rayner-01K3DGN5KGAAE3QPWE4PYZ3F2A.jpg"
+  },
+  "superpower": {
+    "title": "Visionary Trailblazer",
+    "description": "When you’re at your best, insatiable curiosity fuels innovative strategies, your energy rallies teams toward ambitious goals, you design groundbreaking solutions that disrupt norms, you translate complexity into compelling narratives, and you craft long-term plans that balance risk and reward."
+  },
+  "sliders": [
+    {
+      "card": "card1",
+      "title": "Warmth & Skepticism",
+      "content": "Candid and evidence-seeking; trust grows through proof. Add explicit warmth to prevent a curt read."
+    },
+    {
+      "card": "card2",
+      "title": "Risk Management",
+      "content": "Explores every angle and reframes problems. Use crisp decision criteria to avoid analysis-paralysis."
+    },
+    {
+      "card": "card3",
+      "title": "Empathy First",
+      "content": "Balances empathy with objectivity. Under pressure, brevity can feel cold—name effort and appreciation."
+    },
+    {
+      "card": "card4",
+      "title": "Steady Calm",
+      "content": "Pre-deadline tension sharpens focus. Schedule recovery to avoid crashes and pressure on others."
+    },
+    {
+      "card": "card5",
+      "title": "Imaginative Structure",
+      "content": "Bold ideas and high aesthetics lift quality; guardrails and deadlines prevent bikeshedding."
+    }
+  ],
+  "traits": [
+    {
+      "title": "Aesthetic Sensitivity",
+      "level": "Very High",
+      "description": "Hyper-attuned to sensory detail, producing flagship work and high-stakes presentations; risk of bikeshedding on minutiae, so use decision deadlines and acceptance criteria."
+    },
+    {
+      "title": "Intellectual Curiosity",
+      "level": "Very High",
+      "description": "Insatiable questioner who reframes problems and uncovers hidden levers; watch for analysis-paralysis and frequent reframing by setting crisp decision criteria."
+    },
+    {
+      "title": "Creative Imagination",
+      "level": "High",
+      "description": "Generates bold, original concepts and rich narratives for brand, product, and strategy; run early reality-checks to balance feasibility, risk, and stakeholder readiness."
+    },
+    {
+      "title": "Organisation",
+      "level": "Low to Medium",
+      "description": "Keeps core tools ordered and avoids over-engineering; peripheral clutter can hide risks or bottlenecks if unchecked."
+    },
+    {
+      "title": "Productiveness",
+      "level": "Very High",
+      "description": "Relentless throughput suited to high-volume, high-stakes deliverables; guard against workaholic over-extension that strains balance and team pacing."
+    },
+    {
+      "title": "Responsibility",
+      "level": "Low",
+      "description": "Owns errors when flagged and stays open to guidance; benefits from reminders and oversight to catch issues proactively."
+    },
+    {
+      "title": "Energy Level",
+      "level": "Very High",
+      "description": "Relentless drive rallies teams and accelerates projects; respect fatigue limits to prevent crashes and avoid pressuring others to match pace."
+    },
+    {
+      "title": "Sociability",
+      "level": "Very High",
+      "description": "Social catalyst who unites diverse groups and sustains morale; constant interaction can reduce depth and erode personal focus."
+    },
+    {
+      "title": "Assertiveness",
+      "level": "High",
+      "description": "Decisive leader who steers direction and drives negotiations; balance with active listening to avoid a domineering read."
+    },
+    {
+      "title": "Respectfulness",
+      "level": "Low to Medium",
+      "description": "Offers candid feedback with basic courtesy; tone can verge on curt under stress, triggering defensiveness."
+    },
+    {
+      "title": "Trust",
+      "level": "Low",
+      "description": "Prudent collaborator who seeks evidence before full buy-in; may hold back information and delay commitment, frustrating partners."
+    },
+    {
+      "title": "Compassion",
+      "level": "Low to Medium",
+      "description": "Balances empathy with objectivity and offers support while staying rational; sometimes underestimates the motivational power of warmth and appreciation."
+    },
+    {
+      "title": "Anxiety",
+      "level": "Medium",
+      "description": "Typical pre-deadline tension boosts motivation and diligence; sustained stress requires deliberate recovery to avoid fatigue."
+    },
+    {
+      "title": "Depression",
+      "level": "Low",
+      "description": "Generally positive and quick to rebound after setbacks; brief dips can be brushed aside rather than processed, letting minor issues linger."
+    },
+    {
+      "title": "Emotional Volatility",
+      "level": "Medium",
+      "description": "Normal emotional range keeps interactions authentic and relatable; if mood swings and apologies recur, workflow stability can suffer."
+    }
+  ]
 }
+```

@@ -12,22 +12,27 @@
     },
     "sliders": [
         {
+            "card": "card1",
             "title": "Warmth & Skepticism",
             "content": "You balance care with caution"
         },
         {
+            "card": "card2",
             "title": "Risk Management",
             "content": "Decisions take time because you explore every angle."
         },
         {
+            "card": "card3",
             "title": "Empathy First",
             "content": "Others see your compassion, but you often sideline your own needs."
         },
         {
+            "card": "card4",
             "title": "Steady Calm",
             "content": "Your composure is grounding, though sometimes mistaken for disengagement."
         },
-        {
+        {  
+            "card": "card5",
             "title": "Imaginative Structure",
             "content": "You merge creativity with organisation in a rare paradox."
         }
