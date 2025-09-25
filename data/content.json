@@ -1,13 +1,14 @@
 {
-    "welcome": "Fletcher...",
-    "summary": "You're the careful orchestrator \u2014 your mind a stage where \"what-ifs\" perform endlessly. Compassionate yet reserved, calm yet quietly intense, you bring both imaginative flair and structured order wherever you go.",
+    "welcome": "Example...",
+    "summary": "This section provides a summary of the user's personality and their relationship to the world.",
     "animal": {
-        "name": "Aether Falcon",
-        "description": "Born from relentless curiosity and design prowess, the Aether Falcon embodies his innovative spirit, soaring through digital skies, ever in search of the new."
+        "name": "Your spirit animal name appears here",
+        "description": "your spirit animal description appears here",
+        "image": ""
     },
     "superpower": {
-        "title": "The<br>Innovative<br>Visionary",
-        "description": "When you're at your best your creativity thrives in environments that value bold exploration and calculated risk-taking, where your strategic thinking can lead to ground breaking innovations"
+        "title": "Learn your <br>superpower<br> here",
+        "description": "Example description for your superpower appears here. When you're at your best your creativity thrives in environments that value bold exploration and calculated risk-taking..."
     },
     "sliders": [
         {

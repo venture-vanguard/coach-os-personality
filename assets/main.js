@@ -159,6 +159,15 @@ document.addEventListener('DOMContentLoaded', function() {
             if (animalDescriptionEl && content.animal.description) {
                 animalDescriptionEl.textContent = content.animal.description;
             }
+
+            const animalImageEl = document.querySelector('.animal-image');
+            if (animalImageEl) {
+                if (content.animal.image) {
+                    animalImageEl.style.backgroundImage = `url('${content.animal.image}')`;
+                } else {
+                    animalImageEl.style.backgroundImage = '';
+                }
+            }
         }
 
         if (content.superpower) {
