@@ -1,0 +1,111 @@
+{
+    "welcome": "Fletcher...",
+    "summary": "You're the careful orchestrator \u2014 your mind a stage where \"what-ifs\" perform endlessly. Compassionate yet reserved, calm yet quietly intense, you bring both imaginative flair and structured order wherever you go.",
+    "animal": {
+        "name": "Aether Falcon",
+        "description": "Born from relentless curiosity and design prowess, the Aether Falcon embodies his innovative spirit, soaring through digital skies, ever in search of the new."
+    },
+    "superpower": {
+        "title": "The<br>Innovative<br>Visionary",
+        "description": "When you're at your best your creativity thrives in environments that value bold exploration and calculated risk-taking, where your strategic thinking can lead to ground breaking innovations"
+    },
+    "sliders": [
+        {
+            "title": "Warmth & Skepticism",
+            "content": "You balance care with caution"
+        },
+        {
+            "title": "Risk Management",
+            "content": "Decisions take time because you explore every angle."
+        },
+        {
+            "title": "Empathy First",
+            "content": "Others see your compassion, but you often sideline your own needs."
+        },
+        {
+            "title": "Steady Calm",
+            "content": "Your composure is grounding, though sometimes mistaken for disengagement."
+        },
+        {
+            "title": "Imaginative Structure",
+            "content": "You merge creativity with organisation in a rare paradox."
+        }
+    ],
+    "traits": [
+        {
+            "title": "Aesthetic Sensitivity",
+            "level": "Medium",
+            "description": "You have a moderate appreciation for beauty and artistic expression, finding balance between aesthetic considerations and practical needs in your environment and choices."
+        },
+        {
+            "title": "Intellectual Curiosity",
+            "level": "Very High",
+            "description": "You possess an exceptional drive to learn, explore new ideas, and understand complex concepts. Your mind constantly seeks knowledge and meaningful intellectual challenges."
+        },
+        {
+            "title": "Creative Imagination",
+            "level": "High",
+            "description": "You excel at generating original ideas and thinking outside conventional boundaries. Your imagination allows you to envision possibilities others might miss."
+        },
+        {
+            "title": "Organisation",
+            "level": "High",
+            "description": "You naturally create structure and order in your environment and work. Your systematic approach helps you manage complexity effectively."
+        },
+        {
+            "title": "Productiveness",
+            "level": "High",
+            "description": "You consistently accomplish tasks and goals with efficiency. Your strong work ethic drives you to complete projects and make meaningful progress."
+        },
+        {
+            "title": "Responsibility",
+            "level": "High",
+            "description": "You take ownership of your commitments and feel accountable for outcomes. Others rely on you because you follow through consistently."
+        },
+        {
+            "title": "Energy Level",
+            "level": "High",
+            "description": "You maintain strong vitality and enthusiasm for activities. Your natural energy helps you stay engaged and active throughout demanding situations."
+        },
+        {
+            "title": "Sociability",
+            "level": "High",
+            "description": "You enjoy connecting with others and feel comfortable in social situations. People are drawn to your engaging and approachable nature."
+        },
+        {
+            "title": "Assertiveness",
+            "level": "High",
+            "description": "You confidently express your opinions and stand up for your beliefs. You're comfortable taking charge when situations require leadership."
+        },
+        {
+            "title": "Respectfulness",
+            "level": "High",
+            "description": "You treat others with consideration and courtesy, valuing different perspectives. Your respectful approach builds trust and positive relationships."
+        },
+        {
+            "title": "Trust",
+            "level": "High",
+            "description": "You generally believe in others' good intentions and are willing to be vulnerable. This openness allows for deeper, more meaningful connections."
+        },
+        {
+            "title": "Compassion",
+            "level": "High",
+            "description": "You deeply empathize with others' experiences and feel motivated to help those in need. Your caring nature makes you a source of comfort and support."
+        },
+        {
+            "title": "Anxiety",
+            "level": "High",
+            "description": "You tend to worry about potential problems and feel tension about uncertain outcomes. While this can be challenging, it also helps you prepare thoroughly for situations."
+        },
+        {
+            "title": "Depression",
+            "level": "High",
+            "description": "You may experience periods of low mood and discouragement. Recognizing this pattern is important for developing healthy coping strategies and seeking support when needed."
+        },
+        {
+            "title": "Emotional Volatility",
+            "level": "High",
+            "description": "Your emotions can shift quickly and intensely. While this brings depth to your experiences, developing emotional regulation skills can help you navigate these fluctuations more smoothly."
+        }
+    ]
+}
